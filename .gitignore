@@ -1,0 +1,9 @@
+output
+bin
+cache
+lib
+obj
+plugins
+.vs
+_ReSharper.Caches
+.tye

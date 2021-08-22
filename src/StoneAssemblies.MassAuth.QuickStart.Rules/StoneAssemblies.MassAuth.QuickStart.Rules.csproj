@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StoneAssemblies.MassAuth.Rules" Version="1.0.0-alpha0104" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StoneAssemblies.MassAuth.QuickStart.Messages\StoneAssemblies.MassAuth.QuickStart.Messages.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.0.0" />
+    <PackageReference Include="StoneAssemblies.MassAuth" Version="1.0.0-alpha0104" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StoneAssemblies.MassAuth.QuickStart.Messages\StoneAssemblies.MassAuth.QuickStart.Messages.csproj" />
+  </ItemGroup>
+
+</Project>
