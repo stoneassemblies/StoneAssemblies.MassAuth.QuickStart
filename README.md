@@ -1,2 +1,3 @@
 # StoneAssemblies.MassAuth.QuickStart
-A quick start for StoneAssemblies.MassAuth
+
+Source code of the StoneAssemblies.MassAuth's [Hands-on Lab](https://stoneassemblies.github.io/docs/massauth/hands-on-lab/)
