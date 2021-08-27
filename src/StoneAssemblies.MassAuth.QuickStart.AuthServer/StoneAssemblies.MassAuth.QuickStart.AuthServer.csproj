@@ -5,10 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.2.2" />
     <PackageReference Include="Serilog.Sinks.Console" Version="4.0.0" />
     <PackageReference Include="StoneAssemblies.Extensibility" Version="1.0.0-alpha0075" />
-    <PackageReference Include="StoneAssemblies.MassAuth" Version="1.0.0-alpha0104" />
-    <PackageReference Include="StoneAssemblies.MassAuth.Hosting" Version="1.0.0-alpha0104" />
+    <PackageReference Include="StoneAssemblies.MassAuth" Version="1.0.0-alpha0105" />
+    <PackageReference Include="StoneAssemblies.MassAuth.Hosting" Version="1.0.0-alpha0105" />
   </ItemGroup>
 
 </Project>

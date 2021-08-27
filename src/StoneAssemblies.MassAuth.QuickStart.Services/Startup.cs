@@ -1,7 +1,5 @@
 namespace StoneAssemblies.MassAuth.QuickStart.Services
 {
-    using System;
-
     using MassTransit;
 
     using Microsoft.AspNetCore.Builder;
@@ -11,10 +9,9 @@ namespace StoneAssemblies.MassAuth.QuickStart.Services
     using Microsoft.Extensions.Hosting;
     using Microsoft.OpenApi.Models;
 
-    using StoneAssemblies.MassAuth.Messages;
-    using StoneAssemblies.MassAuth.Messages.Extensions;
     using StoneAssemblies.MassAuth.QuickStart.Messages;
     using StoneAssemblies.MassAuth.Services;
+    using StoneAssemblies.MassAuth.Services.Extensions;
 
     public class Startup
     {
@@ -59,7 +56,7 @@ namespace StoneAssemblies.MassAuth.QuickStart.Services
                                 });
                     });
 
-            services.AddScoped<AuthorizeByRuleFilter>();
+            services.AddMassAuth();
 
             var username = this.Configuration.GetSection("RabbitMQ")?["Username"] ?? "queuedemo";
             var password = this.Configuration.GetSection("RabbitMQ")?["Password"] ?? "queuedemo";
@@ -81,10 +78,7 @@ namespace StoneAssemblies.MassAuth.QuickStart.Services
                                                 });
                                     }));
 
-                        var authorizationRequestQueueName =
-                            $"queue:{typeof(AuthorizationRequestMessage<WeatherForecastRequestMessage>).GetFlatName()}";
-                        sc.AddRequestClient<AuthorizationRequestMessage<WeatherForecastRequestMessage>>(
-                            new Uri(authorizationRequestQueueName));
+                        sc.AddDefaultAuthorizationRequestClient<WeatherForecastRequestMessage>();
                     });
 
             services.AddHostedService<BusHostedService>();
