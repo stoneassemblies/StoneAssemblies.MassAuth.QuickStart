@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="StoneAssemblies.MassAuth.Rules" Version="1.0.0-alpha0105" />
+    <PackageReference Include="StoneAssemblies.MassAuth.Rules" Version="1.0.0-alpha0106" />
   </ItemGroup>
 
   <ItemGroup>

@@ -15,7 +15,6 @@ namespace StoneAssemblies.MassAuth.QuickStart.AuthServer
 
     using StoneAssemblies.Extensibility.Extensions;
     using StoneAssemblies.MassAuth.Hosting.Extensions;
-    using StoneAssemblies.MassAuth.Messages.Extensions;
     using StoneAssemblies.MassAuth.Services;
 
     public class Startup
